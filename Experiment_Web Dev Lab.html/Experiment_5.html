@@ -1,13 +1,32 @@
 <html>
     <head>
-        <title>Registration Form</title>
-        <link rel="stylesheet" href="css_file.css">
+        <title>
+            Experiment 1 - Lakshay Motla
+        </title>
     </head>
-    <body>
-        <center><h2 style="color: red;font-style: italic;">Student Registration Form</h2></center>
-        <br>
-        <br>
-        <form class="form-card">
+        <body >
+            <form>
+        <table border="2" align="Center" width="75%" heigth="20%">
+            <tr bgcolor="peachpuff">
+                <th><img src="https://img.jagranjosh.com/images/2022/June/1062022/1519885011802.jpg" alt="logo" width="30px"></th>
+                <th colspan="4">ABESEC Online Book Store</th>
+            </tr>
+            <tr bgcolor="lightpink">
+                <td><a href="Experiment _1_using tables.html">Home</a></td>
+                <td><a href="experiment_2.html">Login</a></td>
+                <td><a href="Registration.html">Registration</a></td>
+                <td><a href="Experiment_3.html">Catalogue</a></td>
+                <td><a href="Experiment_4.html">Cart</a></td>
+            </tr>
+            <tr>
+                <td rowspan="4">CSE 
+                <br>ECE
+                <br>EEE
+                <br>CIVIL
+                </td>
+                <td colspan="4">
+                    <table align="center" border="0">
+            <form class="form-card">
         <table align="center" border="0">
             <tr>
                 <td>Student Name</td>
@@ -69,41 +88,8 @@
             
         </table>
         </form>
-        <script>
-    function validateForm() {
-      const name = document.getElementById("name").value.trim();
-      const password = document.getElementById("password").value.trim();
-      const confirmPassword = document.getElementById("confirmPassword").value.trim();
-      const errorMsg = document.getElementById("error");
-
-      errorMsg.innerHTML = "";
-
-      // Name validation: only alphabets and min length 6
-      const namePattern = /^[A-Za-z]+$/;
-      if (!namePattern.test(name)) {
-        errorMsg.innerHTML = "❌ Name must contain only alphabets.";
-        return false;
-      }
-      if (name.length < 6) {
-        errorMsg.innerHTML = "❌ Name should be at least 6 characters long.";
-        return false;
-      }
-
-      // Password validation: min length 6
-      if (password.length < 6) {
-        errorMsg.innerHTML = " Password should be at least 6 characters long.";
-        return false;
-      }
-
-      // Confirm password match
-      if (password !== confirmPassword) {
-        errorMsg.innerHTML = " Passwords do not match.";
-        return false;
-      }
-
-      alert("✅ Form submitted successfully!");
-      return true;
-    }
-  </script>
-    </body>
+            
+        </table>
+        </form>                     
+        </body>
 </html>

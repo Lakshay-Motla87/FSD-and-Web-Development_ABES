@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url("https://cdn.wallpapersafari.com/80/84/pOXgFh.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    color: #333;
+}
+
+.hero {
+    text-align: center;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+}
+
+.subtitle {
+    font-style: italic;
+    color: #ffdd99;
+}
+.image-section {
+    text-align: center;
+    margin: 30px;
+}
+
+.image-section img {
+    width: 250px;
+    border-radius: 50%;
+    border: 5px solid #444;
+}
+
+.caption {
+    font-weight: bold;
+    margin-top: 10px;
+}
+    .content {
+    background-color: rgba(255, 255, 255, 0.9);
+    margin: 20px;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.content h2 {
+    color: #003366;
+}
+
+.content ul {
+    line-height: 1.8;
+}
+blockquote {
+    font-style: italic;
+    font-size: 18px;
+    border-left: 5px solid #003366;
+    padding-left: 15px;
+    color: #444;
+}
+button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #003366;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0055aa;
+}
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #222;
+     background-image: url("https://cdn.wallpapersafari.com/80/84/pOXgFh.jpg");
+    color: white;
+}
+footer a {
+    color: #ffdd99;
+    text-decoration: none;
+}

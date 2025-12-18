@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Background Repeat & Link Styling</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            background-image: url("https://static.vecteezy.com/system/resources/previews/026/976/054/non_2x/white-and-subtle-gradients-to-add-depth-and-dimension-to-the-abstract-geometric-background-ai-generated-free-photo.jpg");
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+        .box {
+    width: 300px;
+    height: 150px;
+    margin: 20px auto;
+    padding: 20px;
+    color: black;
+    font-weight: bold;
+    border: 2px solid black;
+
+    background-image: linear-gradient(
+        to right,
+        red 50%,
+        yellow 50%
+    );
+    background-size: 40px 40px;
+}
+        .no-repeat {
+            background-repeat: no-repeat;
+        }
+
+        .repeat-x {
+            background-repeat: repeat-x;
+        }
+
+        .repeat-y {
+            background-repeat: repeat-y;
+        }
+        a:link {
+            color: blue;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: purple;
+        }
+
+        a:hover {
+            color: red;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Background Repeat & Link Styling</h1>
+
+    <div class="box no-repeat">
+        Background Image – No Repeat
+    </div>
+
+    <div class="box repeat-x">
+        Background Image – Repeat Horizontally
+    </div>
+
+    <div class="box repeat-y">
+        Background Image – Repeat Vertically
+    </div>
+
+    <p style="text-align:center;">
+        Visit:
+        <a href="https://www.google.com">Google</a>
+    </p>
+
+</body>
+</html>

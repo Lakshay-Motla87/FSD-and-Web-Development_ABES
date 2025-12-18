@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Experiment 1 - Lakshay Motla</title>
+
+    <script>
+        function validateForm() {
+            let name = document.forms["regForm"]["Name"].value.trim();
+            let password = document.forms["regForm"]["Password"].value.trim();
+            let email = document.forms["regForm"]["Email"].value.trim();
+            let phone = document.forms["regForm"]["PhoneNumber"].value.trim();
+            let namePattern = /^[A-Za-z\s]+$/;
+            if (name === "") {
+                alert("Please enter your name.");
+                return false;
+            }
+            if (!namePattern.test(name)) {
+                alert("Name should contain only alphabets.");
+                return false;
+            }
+            if (name.length < 6) {
+                alert("Name should be at least 6 characters long.");
+                return false;
+            }
+            if (password === "") {
+                alert("Please enter your password.");
+                return false;
+            }
+            if (password.length < 6) {
+                alert("Password should be at least 6 characters long.");
+                return false;
+            }
+            let emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[A-Za-z]{2,}$/;
+            if (email === "") {
+                alert("Please enter your email address.");
+                return false;
+            }
+            if (!emailPattern.test(email)) {
+                alert("Invalid email format! Example: name@domain.com");
+                return false;
+            }
+            let phonePattern = /^[0-9]{10}$/;
+            if (phone === "") {
+                alert("Please enter your phone number.");
+                return false;
+            }
+            if (!phonePattern.test(phone)) {
+                alert("Phone number must contain exactly 10 digits only.");
+                return false;
+            }
+
+            alert("Form submitted successfully!");
+            return true;
+        }
+    </script>
+</head>
+
+<body>
+    <form name="regForm" onsubmit="return validateForm()" novalidate>
+        <table border="2" align="center" width="75%">
+            <tr bgcolor="peachpuff">
+                <th>
+                    <img src="https://img.jagranjosh.com/images/2022/June/1062022/1519885011802.jpg" alt="logo" width="30px">
+                </th>
+                <th colspan="4">ABESEC Online Book Store</th>
+            </tr>
+
+            <tr bgcolor="lightpink">
+                <td><a href="#">Home</a></td>
+                <td><a href="#">Login</a></td>
+                <td><a href="#">Registration</a></td>
+                <td><a href="#">Catalogue</a></td>
+                <td><a href="#">Cart</a></td>
+            </tr>
+
+            <tr>
+                <td rowspan="4">CSE <br>ECE <br>EEE <br>CIVIL</td>
+                <td colspan="4">
+                    <table align="center" border="0">
+                        <tr>
+                            <td>Student Name</td>
+                            <td><input type="text" name="Name"></td>
+                        </tr>
+                        <tr>
+                            <td>Email</td>
+                            <td><input type="text" name="Email"></td>
+                        </tr>
+                        <tr>
+                            <td>Password</td>
+                            <td><input type="password" name="Password"></td>
+                        </tr>
+                        <tr>
+                            <td>Confirm Password</td>
+                            <td><input type="password" name="ConfirmPassword"></td>
+                        </tr>
+                        <tr>
+                            <td>Phone Number</td>
+                            <td><input type="text" name="PhoneNumber"></td>
+                        </tr>
+                        <tr>
+                            <td>Gender</td>
+                            <td>
+                                <input type="radio" name="Gender" value="Male">Male
+                                <input type="radio" name="Gender" value="Female">Female
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Date Of Birth</td>
+                            <td><input type="date" name="DOB"></td>
+                        </tr>
+                        <tr>
+                            <td>Languages Known</td>
+                            <td>
+                                <input type="checkbox" name="Languages" value="English">English
+                                <input type="checkbox" name="Languages" value="Hindi">Hindi
+                                <input type="checkbox" name="Languages" value="Telugu">Telugu
+                                <input type="checkbox" name="Languages" value="Tamil">Tamil
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Address</td>
+                            <td><textarea name="Address" rows="4" cols="40"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <input type="submit" value="SUBMIT">
+                                <input type="reset" value="RESET">
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
